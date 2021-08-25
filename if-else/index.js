@@ -44,3 +44,45 @@ function golfScore(par, strokes) {
 }
 
 console.log(golfScore(3, 1))
+
+
+//switch statement
+
+function caseInSwitch(val) {
+    let answer = "";
+    switch (val) {
+        case 1:
+            answer = "one";
+            break;
+        case 2:
+            answer = 'two';
+            break;
+        case 3: 
+            answer = 'three';
+            break;
+        case 4:
+        case 5:
+        case 6:
+            answer = 'more than three less than seven';
+            break;
+        default:
+            answer = 'something else';
+            break;
+    }
+    return answer
+}
+
+//omitting break statement allows multiple cases to provide the same result
+
+
+// if else is not always needed
+
+function isLess(a, b) {
+    return a < b;
+}
+
+//returns true
+console.log(isLess(10, 15))
+//returns false
+console.log(isLess(20, 15))
+
