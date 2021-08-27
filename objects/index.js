@@ -35,3 +35,14 @@ console.log(i, myArray);
 
 //Math.random is a function and must be called with ()
 console.log(Math.floor(Math.random() * 10))
+
+//random number within a range
+function randomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+//radix - specifies the base of a number in a string
+//second argument of parseInt is the radix
+function convertToInteger(str) {
+    return parseInt(str, 2)
+}
