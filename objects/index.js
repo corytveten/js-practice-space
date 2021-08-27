@@ -32,3 +32,6 @@ do {
 } while (i < 5)
 
 console.log(i, myArray);
+
+//Math.random is a function and must be called with ()
+console.log(Math.floor(Math.random() * 10))
