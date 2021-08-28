@@ -46,3 +46,10 @@ function randomInRange(min, max) {
 function convertToInteger(str) {
     return parseInt(str, 2)
 }
+
+//ternary operators can nest within each other
+function checkSign(num) {
+    return num > 0 ? 'positive' : num < 0 ? 'negative' : 'zero'
+}
+//but probably better to do if else statements at that point
+
