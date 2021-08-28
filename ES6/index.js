@@ -29,3 +29,5 @@ console.log(squareIntegers(realNumberArray))
 //simple fields
 const createPerson = (name, age, gender) => ({ name, age, gender })
 console.log(createPerson("Zodiac Hasbro", 56, 'male'))
+
+//import can be used instead of require to access external files
