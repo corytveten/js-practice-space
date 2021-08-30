@@ -30,3 +30,18 @@ function removeFirstLast(str) {
     console.log(removed)
     //return firstOff.replace(firstOff.charAt(firstOff.length -1), '')
 }
+
+//sort the odd numbers in ascending order while leaving even at original
+function sortOdd(arr) {
+    const odds = arr
+        .filter(x => x%2)
+        .sort((a, b) => a - b);
+    
+    return arr
+        .map(x => x%2 ? odds.shift() : x);
+}
+
+function solution(str, strEnd) {
+    const comp = str.slice(length - strEnd.length)
+    return comp === strEnd;
+}
