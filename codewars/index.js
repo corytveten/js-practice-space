@@ -25,23 +25,63 @@
 //   dnaStrand('ATTGC')
 
 //remove first and last characters of a string
-function removeFirstLast(str) {
-    const removed = str.substring(1, str.length - 1)
-    console.log(removed)
-    //return firstOff.replace(firstOff.charAt(firstOff.length -1), '')
-}
+// function removeFirstLast(str) {
+//     const removed = str.substring(1, str.length - 1)
+//     console.log(removed)
+//     //return firstOff.replace(firstOff.charAt(firstOff.length -1), '')
+// }
 
-//sort the odd numbers in ascending order while leaving even at original
-function sortOdd(arr) {
-    const odds = arr
-        .filter(x => x%2)
-        .sort((a, b) => a - b);
+// //sort the odd numbers in ascending order while leaving even at original
+// function sortOdd(arr) {
+//     const odds = arr
+//         .filter(x => x%2)
+//         .sort((a, b) => a - b);
     
-    return arr
-        .map(x => x%2 ? odds.shift() : x);
+//     return arr
+//         .map(x => x%2 ? odds.shift() : x);
+// }
+
+// function solution(str, strEnd) {
+//     const comp = str.slice(length - strEnd.length)
+//     return comp === strEnd;
+// }
+
+// function getCount(str) {
+//     let vowelsCount = 0;
+//     vowelsCount = str.match(/[aeiou]/g).length
+//     return vowelsCount
+// }
+
+function arithmetic(a, b, operator) {
+    const symbolConverter = {
+        'add': function (x, y) { return x + y },
+        'subtract': function (x, y) { return x - y },
+        'multiply': function (x, y) { return x * y },
+        'divide': function (x, y) { return x / y }
+    }
+    return symbolConverter[operator](a, b)
+    // if (operator === 'add') {
+    //     return a + b;
+    // } else if (operator === 'subtract') {
+    //     return a - b;
+    // } else if (operator === 'multiply') {
+    //     return a * b;
+    // } else if (operator === 'divide') {
+    //     return a / b;
+    // } else {
+    //     return 'enter an operator'
+    // }
 }
 
-function solution(str, strEnd) {
-    const comp = str.slice(length - strEnd.length)
-    return comp === strEnd;
+//the wave
+function wave(str) {
+    const waveArr = []
+    for (let i=0; i<str.length; i++) {
+        if (str.charAt(i) === " ") {
+            null
+        } else {
+            waveArr.push(str.slice(0, i) + str.charAt(i).toUpperCase() + str.slice(i+1))
+        }
+    };
+    return waveArr.join(" ")
 }
