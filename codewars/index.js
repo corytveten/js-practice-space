@@ -85,3 +85,13 @@ function wave(str) {
     };
     return waveArr.join(" ")
 }
+
+//increments a string by 1 to create a new string 
+function incrementString (strng) {
+    if (isNaN(strng.slice(-1))) {
+        return strng + 1 
+    } else {
+        const lastNum = parseInt(strng.slice(-1)) + 1;
+        return strng.slice(0, -1) + lastNum
+    }
+  }
