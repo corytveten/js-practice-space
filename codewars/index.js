@@ -97,3 +97,15 @@ function incrementString (strng) {
         return strng.slice(0, firstNumIndex) + lastNum
     }
   }
+
+function timer() {
+    for (let i=0; i<20; i++) {
+        (function(i) {
+            setTimeout(function() {
+                console.log(i);
+        }, 1000);
+    })(i);
+}
+}
+
+timer()
