@@ -91,7 +91,9 @@ function incrementString (strng) {
     if (isNaN(strng.slice(-1))) {
         return strng + 1 
     } else {
-        const lastNum = parseInt(strng.slice(-1)) + 1;
-        return strng.slice(0, -1) + lastNum
+        strArr = strng.split('');
+        const firstNumIndex = strArr.indexOf(strArr.find(x => !isNaN(x)));
+        const lastNum = parseInt(strng.slice(firstNumIndex - strng.length)) + 1;
+        return strng.slice(0, firstNumIndex) + lastNum
     }
   }
