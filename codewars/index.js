@@ -109,3 +109,14 @@ function timer() {
 }
 
 timer()
+
+function divisors(num) {
+    const divArr = []
+   for (let i=1; i<=num; i++) {
+        if (num % i === 0) {
+            divArr.push(i)
+        } 
+        console.log(divArr)
+        return divArr.length
+   } 
+}

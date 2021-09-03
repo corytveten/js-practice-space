@@ -91,15 +91,15 @@ function palindromeCheck(str) {
 
 // ---------------------------------------------
 
-// Q5- Sort the input string in ascending order for canonical total for each set of characters.
+Q5- Sort the input string in ascending order for canonical total for each set of characters.
 
-// if A=1, B=2, C=3 canonical total will be 6;
-// if D=4, E=5, F=6 canonical total will be 15;
-// if G=7, H=8, I=9 canonical total will be 24;
+if A=1, B=2, C=3 canonical total will be 6;
+if D=4, E=5, F=6 canonical total will be 15;
+if G=7, H=8, I=9 canonical total will be 24;
 
-// var input = "efg,ghi,abc";
+var input = "efg,ghi,abc";
 
-// var ouput = "abc,efg,ghi";
+var ouput = "abc,efg,ghi";
 
 // function canonicalTotal(str) {
 //   const strSetArr = str.split(",");
@@ -108,3 +108,10 @@ function palindromeCheck(str) {
 //       const reducedElem = subElemArr.reduce((a,b) => a + b, 0);
 //   })
 // }
+
+function sortString(str) {
+    const strSetArr = str.split(',');
+    strSetArr.forEach(elem => {
+        const subElemArr = elem.split('');
+    })
+}
