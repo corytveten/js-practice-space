@@ -120,3 +120,12 @@ function divisors(num) {
         return divArr.length
    } 
 }
+
+function factorial(n) {
+    if (n > 0 && n < 13) {
+        for (let i=1; i<n; i++) {
+            n += n * i
+        }
+    }
+        
+}
