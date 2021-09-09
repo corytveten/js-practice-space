@@ -132,3 +132,7 @@ function factorial(n) {
       return answer;
     }  
   }
+
+  function twoSum(numbers, target) {
+
+  }
