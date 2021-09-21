@@ -142,3 +142,10 @@ function factorial(n) {
     .filter(i => number % i === 0)
 
 console.log(factors(36));
+
+function domainName(url){
+    const dom = url.split('//')[1] || url
+    const dom2 = dom.split('/')[0]
+    const dom3 = dom2.replace('www.', '')
+    return dom3.split('.')[0]
+  }
