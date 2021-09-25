@@ -187,3 +187,16 @@ function bouncingBall(h,  bounce,  window) {
         return -1;
     }
 }
+
+function duplicateCount(text){
+    const lowerText = text.toLowerCase().split('');
+    let sortedArr = lowerText.slice().sort();
+    let results = [];
+    for (let i=0; i < sortedArr.length - 1; i++) {
+        if (sortedArr[i+1] == sortedArr[i]) {
+            results.push(sortedArr[i]);
+        }
+    }
+    const uniq = [...new Set(results)];
+    return uniq.length;
+  }
