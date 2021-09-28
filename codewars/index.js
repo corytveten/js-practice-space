@@ -200,3 +200,17 @@ function duplicateCount(text){
     const uniq = [...new Set(results)];
     return uniq.length;
   }
+
+  function findOdd(A) {
+    const counts =  {};
+
+    for (const num of A) {
+        counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
+    for (const num in counts) {
+        
+        if (counts[num] % 2 > 0) {
+            return parseInt(num)
+         } 
+    }
+  }
