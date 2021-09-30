@@ -214,3 +214,17 @@ function duplicateCount(text){
          } 
     }
   }
+
+  function xbonacci(signature,n){
+    //your code here
+    let x = signature.length;
+    const newSignature = [...signature]
+    for (i=0; i<n; i++) {
+        const sum = signature.reduce((total, b=(x-1)) => total + b )
+        console.log(sum)
+        newSignature.push(sum)
+    }
+    console.log(newSignature)
+  }
+
+  //https://dev.to/jamesrweb/kata-fibonacci-tribonacci-and-friends-3331
