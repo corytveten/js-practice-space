@@ -228,3 +228,23 @@ function duplicateCount(text){
   }
 
   //https://dev.to/jamesrweb/kata-fibonacci-tribonacci-and-friends-3331
+
+function count (string) { 
+    const strLength = string.length;
+    //create empty object
+    let result = {};
+    if (strLength != 0) {
+        for (let i = 0; i < strLength; i++) {
+
+            let char = string.charAt(i);
+                if (result.hasOwnProperty(char)) { //hasOwnProperty checks an array for the passed argument
+                    //if true char value is incremented up
+                    result[char]++;
+                } else {
+                    //else char key is added to object with a value of one
+                    result[char] = 1;
+                }
+        }
+    }
+    return result;
+}
